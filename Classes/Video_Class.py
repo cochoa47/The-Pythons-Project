@@ -6,16 +6,7 @@ class Video:
         self.director = str(director)
         self.rating = int(rating)
         self.genre = str(genre)
-        """
-        For the most part, if they are adding a new video to the inventory
-        it would likely be something they just recived. 
-        
-        Should rental status be innitalized as not rented?
-        Would that save time?
-        """
         self.rentalStatus = str(rentalStatus)
-        
-         
         
     def getName(self):
         return self.name
@@ -34,3 +25,22 @@ class Video:
         
     def getRentalStatus(self):
         return self.rentalStatus
+
+
+    def editName(self, name):
+        self.name = name
+
+    def editYear(self, year):
+        self.year = year
+
+    def editDirector(self, director):
+        self.director = director
+
+    def editRating(self, rating):
+        self.rating = rating
+
+    def editGenre(self, genre):
+        self.genre = genre
+
+    def editRentalStatus(self, rentalStatus):
+        self.rentalStatus = rentalStatus
